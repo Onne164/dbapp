@@ -20,7 +20,8 @@
             <a href="/post/{{$post->id}}">read more</a>
         </div>
         <div class="card-footer text-muted">
-           {{$post->created_at->diffForHumans()}} ;
+           {{$post->user->name}}
+           {{$post->created_at->diffForHumans()}};
         </div>
     </div>
         @endforeach
